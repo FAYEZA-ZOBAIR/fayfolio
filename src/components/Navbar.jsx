@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion"; // 🧠 THIS WAS MISSING
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,7 +37,6 @@ function Navbar() {
 
   return (
     <header className="w-full px-6 py-4 bg-white shadow-sm z-[60] fixed top-0 left-0 right-0 h-[64px]">
-
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <a
@@ -50,31 +49,11 @@ function Navbar() {
 
         {/* Nav Links - Hidden on mobile */}
         <ul className="hidden md:flex gap-4 lg:gap-6 text-[14px] lg:text-[16px] font-medium font-sora text-black">
-          <li>
-            <a href="#skills" className="hover:text-[#B9FF66] transition">
-              Skills
-            </a>
-          </li>
-          <li>
-            <a href="#projects" className="hover:text-[#B9FF66] transition">
-              Projects
-            </a>
-          </li>
-          <li>
-            <a href="#journey" className="hover:text-[#B9FF66] transition">
-              Journey
-            </a>
-          </li>
-          <li>
-            <a href="#about" className="hover:text-[#B9FF66] transition">
-              About Me
-            </a>
-          </li>
-          <li>
-            <a href="#contact" className="hover:text-[#B9FF66] transition">
-              Contact
-            </a>
-          </li>
+          <li><a href="#skills" className="hover:text-[#B9FF66] transition">Skills</a></li>
+          <li><a href="#projects" className="hover:text-[#B9FF66] transition">Projects</a></li>
+          <li><a href="#journey" className="hover:text-[#B9FF66] transition">Journey</a></li>
+          <li><a href="#about" className="hover:text-[#B9FF66] transition">About Me</a></li>
+          <li><a href="#contact" className="hover:text-[#B9FF66] transition">Contact</a></li>
         </ul>
 
         {/* CV Button - Hidden on mobile */}
@@ -101,7 +80,7 @@ function Navbar() {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            className="fixed inset-0 bg-white z-50 flex flex-col items-center px-6"
+            className="fixed inset-0 bg-white z-[100] flex flex-col items-center px-6 min-h-screen"
             initial="hidden"
             animate="visible"
             exit="exit"
@@ -123,41 +102,11 @@ function Navbar() {
               animate="visible"
               exit="exit"
             >
-              <motion.a
-                href="#skills"
-                onClick={() => setMenuOpen(false)}
-                variants={linkVariants}
-              >
-                Skills
-              </motion.a>
-              <motion.a
-                href="#projects"
-                onClick={() => setMenuOpen(false)}
-                variants={linkVariants}
-              >
-                Projects
-              </motion.a>
-              <motion.a
-                href="#journey"
-                onClick={() => setMenuOpen(false)}
-                variants={linkVariants}
-              >
-                Journey
-              </motion.a>
-              <motion.a
-                href="#about"
-                onClick={() => setMenuOpen(false)}
-                variants={linkVariants}
-              >
-                About Me
-              </motion.a>
-              <motion.a
-                href="#contact"
-                onClick={() => setMenuOpen(false)}
-                variants={linkVariants}
-              >
-                Contact
-              </motion.a>
+              <motion.a href="#skills" onClick={() => setMenuOpen(false)} variants={linkVariants}>Skills</motion.a>
+              <motion.a href="#projects" onClick={() => setMenuOpen(false)} variants={linkVariants}>Projects</motion.a>
+              <motion.a href="#journey" onClick={() => setMenuOpen(false)} variants={linkVariants}>Journey</motion.a>
+              <motion.a href="#about" onClick={() => setMenuOpen(false)} variants={linkVariants}>About Me</motion.a>
+              <motion.a href="#contact" onClick={() => setMenuOpen(false)} variants={linkVariants}>Contact</motion.a>
 
               {/* Mobile CV Button */}
               <motion.a
