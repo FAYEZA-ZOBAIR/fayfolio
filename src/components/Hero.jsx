@@ -1,4 +1,5 @@
-import { Mail, Linkedin, MessageCircle } from "lucide-react";
+import { Mail } from "lucide-react";
+import { SiLinkedin, SiGithub } from "react-icons/si";
 import bannerImg from "../assets/Banner 1.svg";
 
 function Hero() {
@@ -27,30 +28,45 @@ function Hero() {
         </p>
 
         {/* Social Icons */}
-        <div className="flex gap-4 pt-2 sm:pt-4">
-          <a
-            href="https://www.linkedin.com/in/fayeza-zobair-8a739621a/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-[48px] sm:w-[56px] h-[48px] sm:h-[56px] flex items-center justify-center border border-black rounded-md group transition-colors duration-300 hover:bg-black"
-          >
-            <Linkedin size={22} className="text-black group-hover:text-white transition-colors duration-300" />
-          </a>
-          <a
-            href="mailto:fayeza.zobair@gmail.com"
-            className="w-[48px] sm:w-[56px] h-[48px] sm:h-[56px] flex items-center justify-center border border-black rounded-md group transition-colors duration-300 hover:bg-black"
-          >
-            <Mail size={22} className="text-black group-hover:text-white transition-colors duration-300" />
-          </a>
-          <a
-            href="http://fayeza.zobair_20722/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-[48px] sm:w-[56px] h-[48px] sm:h-[56px] flex items-center justify-center border border-black rounded-md group transition-colors duration-300 hover:bg-black"
-          >
-            <MessageCircle size={22} className="text-black group-hover:text-white transition-colors duration-300" />
-          </a>
-        </div>
+<div className="flex gap-4 pt-2 sm:pt-4">
+  {/* LinkedIn */}
+  <a
+    href="https://www.linkedin.com/in/fayeza-zobair-8a739621a/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="relative group w-[48px] sm:w-[56px] h-[48px] sm:h-[56px] flex items-center justify-center border border-black rounded-md transition-colors duration-300 hover:bg-black"
+  >
+    <SiLinkedin size={22} className="text-black group-hover:text-white transition-colors duration-300" />
+    <span className="absolute bottom-[-28px] left-1/2 -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      LinkedIn
+    </span>
+  </a>
+
+  {/* Email */}
+  <a
+    href="mailto:fayeza.zobair@gmail.com"
+    className="relative group w-[48px] sm:w-[56px] h-[48px] sm:h-[56px] flex items-center justify-center border border-black rounded-md transition-colors duration-300 hover:bg-black"
+  >
+    <Mail size={22} className="text-black group-hover:text-white transition-colors duration-300" />
+    <span className="absolute bottom-[-28px] left-1/2 -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      Email
+    </span>
+  </a>
+
+  {/* GitHub */}
+  <a
+    href="https://github.com/FAYEZA-ZOBAIR"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="relative group w-[48px] sm:w-[56px] h-[48px] sm:h-[56px] flex items-center justify-center border border-black rounded-md transition-colors duration-300 hover:bg-black"
+  >
+    <SiGithub size={22} className="text-black group-hover:text-white transition-colors duration-300" />
+    <span className="absolute bottom-[-28px] left-1/2 -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      GitHub
+    </span>
+  </a>
+</div>
+
       </div>
 
       {/* Right Section - Image */}
