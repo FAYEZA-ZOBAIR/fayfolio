@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Icon from "../assets/Icon.svg";
 import LbyhMarquee from "./LbyhMarquee";
 
 function LBYH() {
@@ -60,10 +59,7 @@ function LBYH() {
 
             {/* Key Ingredients */}
             <div className="w-full bg-zinc-900 text-white rounded-[30px] px-8 py-6 shadow-md">
-              <div className="flex items-center gap-4 mb-6">
-                <h2 className="text-[28px] font-bold font-spacegrotesk text-lime-400">Key Ingredients</h2>
-                <img src={Icon} alt="icon" className="w-[24px] h-[24px] mt-1" />
-              </div>
+              <h2 className="text-[28px] font-bold font-spacegrotesk text-lime-400 mb-6">Key Ingredients</h2>
               <div className="text-[16px] text-zinc-200 font-spacegrotesk space-y-2">
                 <p>Crafted responsive designs for web and mobile in Figma, ensuring visual and functional consistency</p>
                 <p>Designed core screens: Home, Subject Dashboard, Chapter Page, Quiz View</p>
@@ -132,10 +128,7 @@ function LBYH() {
 
               {/* Key Ingredients */}
               <div className="w-full bg-zinc-900 text-white rounded-[30px] px-8 py-6 max-w-[720px] shadow-md">
-                <div className="flex items-center gap-4 mb-6">
-                  <h2 className="text-[28px] font-bold font-spacegrotesk text-lime-400">Key Ingredients</h2>
-                  <img src={Icon} alt="icon" className="w-[24px] h-[24px] mt-1" />
-                </div>
+                <h2 className="text-[28px] font-bold font-spacegrotesk text-lime-400 mb-6">Key Ingredients</h2>
                 <div className="text-[16px] text-zinc-200 font-spacegrotesk space-y-2">
                   <p>Crafted responsive designs for web and mobile in Figma, ensuring visual and functional consistency</p>
                   <p>Designed core screens: Home, Subject Dashboard, Chapter Page, Quiz View</p>
