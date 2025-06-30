@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import icon from "../assets/icon.svg";
+import icon from "../assets/Icon.svg";
 import SushiMarquee from "./SushiMarquee";
 
 export default function Sushi() {
