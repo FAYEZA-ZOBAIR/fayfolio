@@ -1,4 +1,4 @@
-import icon from "../assets/icon.svg";
+import Icon from "../assets/Icon.svg";
 
 const journeyData = [
   {
@@ -63,7 +63,7 @@ function MyJourney() {
             <div className="bg-zinc-800 text-white rounded-[24px] sm:rounded-[30px] px-6 sm:px-8 py-6 max-w-full md:max-w-[800px] w-full shadow-sm">
               <div className="flex items-start gap-4">
                 {/* Icon */}
-                <img src={icon} alt="icon" className="w-[28px] sm:w-[32px] md:w-[35px] h-auto mt-1" />
+                <img src={Icon} alt="Icon" className="w-[28px] sm:w-[32px] md:w-[35px] h-auto mt-1" />
 
                 {/* Text Content */}
                 <div className="flex flex-col gap-1">
