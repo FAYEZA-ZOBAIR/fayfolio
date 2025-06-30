@@ -22,10 +22,10 @@ function StickyMarqueeHeader() {
       >
         <MarqueeItem icon={<Sparkles size={18} />} text="Hey, I’m Fayeza — building pixels & punchlines" weight="bold" />
         <MarqueeItem icon={<Smile size={18} />} text="It’s nice to meet you." weight="regular" />
-        <MarqueeItem icon={<PenTool size={18} />} text="UI/UX Wizardry" weight="outlined" />
+        <MarqueeItem icon={<PenTool size={18} />} text="UI/UX Wizardry" weight="bold" />
         <MarqueeItem icon={<Code size={18} />} text="ReactJS + Tailwind CSS" weight="bold" />
         <MarqueeItem icon={<Brain size={18} />} text="Creativity meets Clean Code" weight="regular" />
-        <MarqueeItem icon={<MousePointerClick size={18} />} text="Clicks with Meaning" weight="outlined" />
+        <MarqueeItem icon={<MousePointerClick size={18} />} text="Clicks with Meaning" weight="regular" />
       </Marquee>
     </div>
   );
