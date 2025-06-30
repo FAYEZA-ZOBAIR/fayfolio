@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import icon from "../assets/icon.svg";
+import Icon from "../assets/Icon.svg";
 import KaapiMarquee from "./KaapiMarquee";
 
 function Kaapi() {
@@ -62,7 +62,7 @@ function Kaapi() {
             <div className="w-full bg-zinc-900 text-white rounded-[30px] px-8 py-6 shadow-md">
               <div className="flex items-center gap-4 mb-6">
                 <h2 className="text-[28px] font-bold font-spacegrotesk text-lime-400">Key Ingredients</h2>
-                <img src={icon} alt="icon" className="w-[24px] h-[24px] mt-1" />
+                <img src={Icon} alt="icon" className="w-[24px] h-[24px] mt-1" />
               </div>
               <div className="text-[16px] text-zinc-200 font-spacegrotesk space-y-2">
                 <p>Crafted a clean, swipe-friendly mobile layout using Figma</p>
@@ -134,7 +134,7 @@ function Kaapi() {
               <div className="w-full bg-zinc-900 text-white rounded-[30px] px-8 py-6 max-w-[720px] shadow-md">
                 <div className="flex items-center gap-4 mb-6">
                   <h2 className="text-[28px] font-bold font-spacegrotesk text-lime-400">Key Ingredients</h2>
-                  <img src={icon} alt="icon" className="w-[24px] h-[24px] mt-1" />
+                  <img src={Icon} alt="icon" className="w-[24px] h-[24px] mt-1" />
                 </div>
                 <div className="text-[16px] text-zinc-200 font-spacegrotesk space-y-2">
                   <p>Crafted a clean, swipe-friendly mobile layout using Figma</p>
