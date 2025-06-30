@@ -54,7 +54,7 @@ function Projects() {
   ];
 
   return (
-    <section className="w-full px-[100px] py-16 bg-black">
+    <section className="w-full px-6 sm:px-8 md:px-[60px] lg:px-[100px] py-16 bg-black">
       {/* Section Header */}
       <div className="flex justify-between items-center mb-12">
         <h2 className="text-[48px] font-[400] font-sora text-white">
