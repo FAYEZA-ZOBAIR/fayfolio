@@ -160,7 +160,7 @@ function LBYH() {
                 <p className="text-[16px] text-black font-spacegrotesk text-justify mt-4 leading-relaxed">
                   An accessible and responsive e-learning platform built for CBSE students — designed to feel friendly,
                   uncluttered, and device-ready. Whether you're on a school computer or scrolling on your phone during a
-                  chai break, LBYH works like a charm.
+                  chai break, LBYH works like a charm .
                 </p>
               </div>
 
@@ -214,6 +214,7 @@ function ColorBox({ name, hex }) {
       <div className="w-full h-[100px] rounded-xl shadow-md" style={{ backgroundColor: hex }} />
       <p className="text-xs text-white mt-2">{hex}</p>
     </div>
+
   );
 }
 
