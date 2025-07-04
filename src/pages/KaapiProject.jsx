@@ -19,7 +19,7 @@ const ColorBox = ({ name, hex }) => {
 
 function KaapiProject() {
   return (
-    <section className="w-full px-[100px] py-16 bg-white max-w-[1600px] mx-auto">
+    <section className="w-full px-6 sm:px-8 md:px-[60px] lg:px-[100px]  py-16 bg-white max-w-[1600px] mx-auto">
       <div className="flex flex-col lg:flex-row justify-between items-start gap-12">
         {/* ----------- MOBILE VIEW (stacked layout) ----------- */}
         <div className="block lg:hidden w-full space-y-12">
