@@ -4,7 +4,7 @@ import bannerImg from "../assets/Banner 1.svg";
 
 function Hero() {
   return (
-    <section className="w-full px-6 sm:px-8 md:px-12 lg:px-[100px] sm:py-12 md:py-12 lg:py-20 bg-white max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+    <section className="mt-[74px] w-full px-6 sm:px-8 md:px-12 lg:px-[100px] py-12 lg:py-20 bg-white max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
       {/* Left Section */}
       <div className="w-full md:w-1/2 space-y-6 text-left">
         <div className="text-[32px] sm:text-[40px] lg:text-[48px] font-sora leading-snug text-black">
