@@ -7,7 +7,7 @@ export default function Sushi() {
   return (
     <>
       <Navbar />
-      <section className="w-full px-[100px] py-16 bg-white max-w-[1600px] mx-auto">
+      <section className="w-full px-6 sm:px-8 md:px-[60px] lg:px-[100px] py-16 bg-white max-w-[1600px] mx-auto">
         {/* ----------- MOBILE VIEW ----------- */}
         <div className="block lg:hidden w-full space-y-12">
           {/* Title */}
